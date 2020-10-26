@@ -1,60 +1,39 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+   
+   <div>    
+     <br/>
+     <h2 align="center">MK Typing</h2>
+     <br/>
+     <Paragraphs v-bind:paragraphs="paragraphs"/>
+   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Paragraphs from './components/Paragraphs'
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Paragraphs,
   },
 
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      paragraphs: [
+        {
+          id: 1,
+          text: "Test paragraph for MK Typing. This is way shorter than it should be",
+          time: 0
+        },
+        {
+          id: 2,
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          time: 0
+        }
+      ]
+    }
+  }
+    
 };
 </script>
