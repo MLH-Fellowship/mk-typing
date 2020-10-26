@@ -20,8 +20,6 @@
           v-model="answer"
         ></v-text-field>
 
-        {{ answer }}
-
         <v-btn class="mt-5" dark v-on:click="changeStage"> Submit </v-btn>
 
         <v-alert :value="alert" type="error" class="mt-5"> Incorrect! </v-alert>
@@ -36,9 +34,10 @@
 </template>
 
 <script>
-import AppBar from "./AppBar";
+import AppBar from "../components/AppBar";
 
 export default {
+  name: "home",
   created() {
     this.beginStage();
   },
@@ -53,6 +52,9 @@ export default {
         this.alert = false;
 
         if (this.answer == this.stages[this.currentStage - 1].text) {
+          if (this.currentStage == 3) {
+            this.$router.push("/game-won");
+          }
           this.moveOnToNextStage();
           this.resetCounter();
         } else {
@@ -72,7 +74,7 @@ export default {
       this.stages[this.currentStage - 1].counter = 30;
     },
     beginStage: function () {
-      setInterval(() => {
+      let interval = setInterval(() => {
         if (
           this.stages[this.currentStage - 1].counter == 0 &&
           this.currentStage <= 2 &&
@@ -88,6 +90,11 @@ export default {
         }
         if (this.stages[this.currentStage - 1].counter != 0) {
           this.stages[this.currentStage - 1].counter -= 1;
+        }
+
+        if (this.stages[this.currentStage - 1].counter == 0) {
+          this.$router.push("/game-over");
+          clearInterval(interval);
         }
       }, 1000);
     },

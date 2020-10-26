@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vuetify from 'vuetify/lib'
 import '@mdi/font/css/materialdesignicons.css'
+import router from './router'
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
@@ -14,7 +15,10 @@ Vue.use(IconsPlugin)
 Vue.use(Vuetify)
 Vue.config.productionTip = false
 
+
+
 new Vue({
   vuetify,
+  router,
   render: h => h(App)
 }).$mount('#app')
