@@ -1,21 +1,18 @@
 <template>
    
-   <div>    
-     <br/>
-     <h2 align="center">MK Typing</h2>
-     <br/>
-     <Paragraphs v-bind:paragraphs="paragraphs"/>
+   <div>
+     <Gameplay />
    </div>
 </template>
 
 <script>
-import Paragraphs from './components/Paragraphs'
+import Gameplay from "./components/Gameplay"
 
 export default {
   name: 'App',
 
   components: {
-    Paragraphs,
+    Gameplay
   },
 
   data() {
@@ -37,3 +34,16 @@ export default {
     
 };
 </script>
+
+
+<style>
+
+* {
+  font-family: "Merienda", Helvetica, Arial;
+  font-size: 20px;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),   url(./fonts/Roboto/Roboto-Black.ttf) format("truetype");}
+</style>
+
