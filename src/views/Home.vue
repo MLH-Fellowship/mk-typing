@@ -4,7 +4,8 @@
 
     <v-container class="mt-5">
       <div class="center">
-        <p>Stage {{ currentStage }}</p>
+        <p>Stage: {{ currentStage }}</p>
+        <p>Score: {{ score }} </p>
         <p class="font-weight-bold mt-2">Type out the following Paragraph</p>
 
         <div class="mt-5">
@@ -50,10 +51,11 @@ export default {
         console.log(this.answer == this.stages[this.currentStage - 1].text);
 
         this.alert = false;
+        this.score += this.stages[this.currentStage - 1].counter
 
         if (this.answer == this.stages[this.currentStage - 1].text) {
           if (this.currentStage == 3) {
-            this.$router.push("/game-won");
+            this.$router.push({name: 'game-won', params: {score: this.score}});
           }
           this.moveOnToNextStage();
           this.resetCounter();
@@ -93,7 +95,7 @@ export default {
         }
 
         if (this.stages[this.currentStage - 1].counter == 0) {
-          this.$router.push("/game-over");
+          this.$router.push({name: 'game-over', params: {score: this.score}});
           clearInterval(interval);
         }
       }, 1000);
@@ -121,6 +123,7 @@ export default {
         },
       ],
       currentStage: 1,
+      score: 0
     };
   },
 };
