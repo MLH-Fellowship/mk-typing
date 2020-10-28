@@ -26,9 +26,11 @@
         <v-alert :value="alert" type="error" class="mt-5"> Incorrect! </v-alert>
 
         <div class="counter mt-5 center">
-          <p>Count down</p>
-          <p>{{ stages[currentStage - 1].counter }}</p>
+          <p>Time remaining: {{ stages[currentStage - 1].counter }}</p>
         </div>
+
+        <v-btn class="mt-5" dark v-on:click="goToLeaderboard"> Leaderboard </v-btn>
+
       </div>
     </v-container>
   </div>
@@ -100,6 +102,9 @@ export default {
         }
       }, 1000);
     },
+    goToLeaderboard: function () {
+      this.$router.push("leaderboard")
+    }
   },
   data() {
     return {
