@@ -5,11 +5,12 @@
 </template>
 
 <script>
+
 export default {
   name: "App",
   icons: {
     iconfont: "mdiSvg", // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
-  },
+  },  
 };
 
 </script>
