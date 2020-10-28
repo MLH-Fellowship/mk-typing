@@ -1,8 +1,6 @@
-
-<template >
-    <div class="gen">
-        <v-container class="gen">
-
+<template>
+    <div>
+        <v-container class="mt-5">
             <div class="center">
                 <p class="font-weight-bold mt-2">Game Over</p>
                 <v-img
@@ -35,39 +33,9 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vw;
 }
 
 .input {
     width: 80%;
 }
-<<<<<<< HEAD
-
-.gen{
-      color: white;
-      background: #EB4320;
-    }
-
-
-
-        .cta{
-  
-    width: 50%;
-    display: block;
-    color: black;
-    border-radius: 20px;
-    padding: .5em;
-    text-decoration: none;
-    font-size: 1.5em;
-    margin: 3% auto 7%;
-    position: relative;
-    z-index: 4;
-}
-
-    .mainboard{
-  color:#EB4320 ;
-
-}
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
 </style>
