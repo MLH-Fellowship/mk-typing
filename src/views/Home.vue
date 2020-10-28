@@ -1,5 +1,5 @@
-<template >
-  <div class="gen">
+<template>
+  <div>
     <AppBar />
 
     <v-container class="mt-5">
@@ -17,11 +17,11 @@
           placeholder="Type here..."
           single-line
           hide-details
-          class="cta"
+          class="input mt-5"
           v-model="answer"
         ></v-text-field>
 
-        <v-btn class="cta"  v-on:click="changeStage"> Submit </v-btn>
+        <v-btn class="mt-5" dark v-on:click="changeStage"> Submit </v-btn>
 
         <v-alert :value="alert" type="error" class="mt-5"> Incorrect! </v-alert>
 
@@ -29,7 +29,7 @@
           <p>Time remaining: {{ stages[currentStage - 1].counter }}</p>
         </div>
 
-        <v-btn class="cta"  v-on:click="goToLeaderboard"> Leaderboard </v-btn>
+        <v-btn class="mt-5" dark v-on:click="goToLeaderboard"> Leaderboard </v-btn>
 
       </div>
     </v-container>
@@ -139,12 +139,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
 }
 
 .input {
   width: 80%;
 }
+
 
 
 .gen{
@@ -173,6 +173,5 @@ export default {
   color:#EB4320 ;
 
 }
-
 
 </style>
