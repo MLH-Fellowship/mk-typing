@@ -18,8 +18,8 @@
                    <th class="score">Score</th>
                 </tr>
             </thead>
-            <tbody v-bind:key="player.rank" v-for="player in players">           
-                <tr>
+            <tbody  v-bind:key="player.rank" v-for="player in players">           
+                <tr >
                     <td class="rank">{{player.rank}}</td>
                     <td class="name">{{player.name}}</td>
                     <td class="score">{{player.score}}</td>
@@ -101,11 +101,11 @@ export default {
 }
 
 
-
     .center {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         background: #20EB71;
         height: 100vw;
         border-radius: 5%;
@@ -134,7 +134,6 @@ export default {
   font-family:sans-serif;
     }
 
-    
 
     .cta{
     background-color: #00cc80;
