@@ -1,7 +1,6 @@
 <template>
-    <div class="gen">
-
-        <v-container class="gen">
+    <div>
+        <v-container class="mt-5">
             <div class="center">
                 <p class="font-weight-bold mt-2">Game Won</p>
                 <v-img
@@ -34,7 +33,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vw;
 }
 
 .input {

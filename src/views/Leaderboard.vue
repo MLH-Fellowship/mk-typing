@@ -18,8 +18,8 @@
                    <th class="score">Score</th>
                 </tr>
             </thead>
-            <tbody  v-bind:key="player.rank" v-for="player in players">           
-                <tr >
+            <tbody v-bind:key="player.rank" v-for="player in players">           
+                <tr>
                     <td class="rank">{{player.rank}}</td>
                     <td class="name">{{player.name}}</td>
                     <td class="score">{{player.score}}</td>
