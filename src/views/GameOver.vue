@@ -1,5 +1,5 @@
-<template >
-    <div class="gen">
+<template>
+    <div>
         <v-container class="mt-5">
             <div class="center">
                 <p class="font-weight-bold mt-2">Game Over</p>
@@ -10,7 +10,7 @@
                 ></v-img>
                 <div class="mt-5">Score: {{score}}</div>
 
-                <v-btn class="cta"  v-on:click="playAgain">Play Again</v-btn>
+                <v-btn class="mt-5" dark v-on:click="playAgain">Play Again</v-btn>
             </div>
         </v-container>
     </div>
@@ -37,33 +37,5 @@ export default {
 
 .input {
     width: 80%;
-}
-
-.gen{
-      width: 100%;
-      height: 100%;
-      color: white;
-      background: #EB4320;
-    }
-
-
-
-        .cta{
-  
-    width: 50%;
-    display: block;
-    color: #20EB71;
-    border-radius: 20px;
-    padding: .5em;
-    text-decoration: none;
-    font-size: 1.5em;
-    margin: 3% auto 7%;
-    position: relative;
-    z-index: 4;
-}
-
-    .mainboard{
-  color:#EB4320 ;
-
 }
 </style>
