@@ -41,7 +41,6 @@ export default {
 .input {
     width: 80%;
 }
-<<<<<<< HEAD
 
 .gen{
       color: white;
@@ -68,6 +67,4 @@ export default {
   color:#EB4320 ;
 
 }
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
 </style>

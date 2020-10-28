@@ -67,7 +67,6 @@ export default {
 </script>
 
 <style scoped>
-<<<<<<< HEAD
 
 
 .mainboard{
@@ -77,13 +76,10 @@ export default {
 
 
 
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     .center {
         display: flex;
         flex-direction: column;
         align-items: center;
-<<<<<<< HEAD
         background: #20EB71;
         height: 100vw;
         border-radius: 5%;
@@ -95,8 +91,6 @@ export default {
       width: 100%;
       height: 100%;
       background: #1D6DD5;
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     }
 
     table {
@@ -109,7 +103,6 @@ export default {
       width: 30%;
     }
 
-<<<<<<< HEAD
     
 
     .cta{
@@ -126,8 +119,6 @@ export default {
     z-index: 4;
 }
 
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     th.name {
       width: 40%;
     } 
