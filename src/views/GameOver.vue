@@ -1,8 +1,6 @@
-
 <template >
     <div class="gen">
         <v-container class="gen">
-
             <div class="center">
                 <p class="font-weight-bold mt-2">Game Over</p>
                 <v-img
@@ -12,7 +10,7 @@
                 ></v-img>
                 <div class="mt-5">Score: {{score}}</div>
 
-                <v-btn class="mt-5" dark v-on:click="playAgain">Play Again</v-btn>
+                <v-btn class="cta"  v-on:click="playAgain">Play Again</v-btn>
             </div>
         </v-container>
     </div>
@@ -41,7 +39,6 @@ export default {
 .input {
     width: 80%;
 }
-<<<<<<< HEAD
 
 .gen{
       color: white;
@@ -68,6 +65,4 @@ export default {
   color:#EB4320 ;
 
 }
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
 </style>

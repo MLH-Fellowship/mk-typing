@@ -1,10 +1,15 @@
 <template>
-  <div>
+  <div class="gen">
     <AppBar />
+    
 
     <v-container class="mt-5">
       <div class="center">
         <p>Leaderboard</p>
+
+    
+
+
         <table>
             <thead>
                 <tr>
@@ -21,7 +26,9 @@
                 </tr>   
             </tbody>
         </table>
-        <v-btn class="mt-5" dark v-on:click="returnToGame">
+
+
+        <v-btn class="cta"  v-on:click="returnToGame">
           Return to Game
         </v-btn>
       </div>
@@ -31,11 +38,30 @@
 
 <script>
 import AppBar from "../components/AppBar";
+//import LeaderBoard from "../components/LeaderboardComponent";
 
 export default {
+
+  // 1D6DD5 blue EB4320 red #20EB71
+
+  /*
+.gen{
+      width: 100%;
+      height: 100%;
+      background: #1D6DD5;
+    }
+
+    .mainboard{
+  color:#EB4320 ;
+
+}
+
+
+
+  */
   name: "leaderboard",
   components: {
-    AppBar,
+    AppBar
   },
   methods: {
     returnToGame: function () {
@@ -67,7 +93,6 @@ export default {
 </script>
 
 <style scoped>
-<<<<<<< HEAD
 
 
 .mainboard{
@@ -76,14 +101,11 @@ export default {
 }
 
 
-
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     .center {
         display: flex;
         flex-direction: column;
         align-items: center;
-<<<<<<< HEAD
+
         background: #20EB71;
         height: 100vw;
         border-radius: 5%;
@@ -95,22 +117,23 @@ export default {
       width: 100%;
       height: 100%;
       background: #1D6DD5;
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     }
 
     table {
-      width: 50%;
-      border: 1px;
-      border-spacing: 1px      
+      width: 100%;
+      border: 5px;
+      border-spacing: 5px;
+      padding: 10px;      
     }
 
     th.rank {
       width: 30%;
+      background-color: #00cc80;
+  padding: 10px;
+  color: white;
+  font-family:sans-serif;
     }
 
-<<<<<<< HEAD
-    
 
     .cta{
     background-color: #00cc80;
@@ -126,10 +149,20 @@ export default {
     z-index: 4;
 }
 
-=======
->>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     th.name {
       width: 40%;
+      background: #00c2ff;
+      color: white;
+    padding: 10px;
+    font-family:sans-serif;
+    } 
+
+    th.score {
+      width: 40%;
+      background: #00c2ff;
+    padding: 10px;
+    color: white;
+    font-family:sans-serif;
     } 
 
 </style>
