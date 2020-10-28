@@ -13,8 +13,8 @@
                    <th class="score">Score</th>
                 </tr>
             </thead>
-            <tbody v-bind:key="player.rank" v-for="player in players">           
-                <tr>
+            <tbody  v-bind:key="player.rank" v-for="player in players">           
+                <tr >
                     <td class="rank">{{player.rank}}</td>
                     <td class="name">{{player.name}}</td>
                     <td class="score">{{player.score}}</td>
@@ -67,10 +67,36 @@ export default {
 </script>
 
 <style scoped>
+<<<<<<< HEAD
+
+
+.mainboard{
+  color:black ;
+
+}
+
+
+
+=======
+>>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     .center {
         display: flex;
         flex-direction: column;
         align-items: center;
+<<<<<<< HEAD
+        background: #20EB71;
+        height: 100vw;
+        border-radius: 5%;
+        color: white;
+        padding: 30px;
+    }
+
+    .gen{
+      width: 100%;
+      height: 100%;
+      background: #1D6DD5;
+=======
+>>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     }
 
     table {
@@ -83,6 +109,25 @@ export default {
       width: 30%;
     }
 
+<<<<<<< HEAD
+    
+
+    .cta{
+    background-color: #00cc80;
+    width: calc(100% - 1em);
+    display: block;
+    color: black;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+=======
+>>>>>>> cd8aeb96915195772b0b89809511c849e1f84b4a
     th.name {
       width: 40%;
     } 
