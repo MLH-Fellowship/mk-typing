@@ -144,4 +144,34 @@ export default {
 .input {
   width: 80%;
 }
+
+
+
+.gen{
+      width: 100%;
+      height: 100%;
+      background: #1D6DD5;
+    }
+
+
+
+        .cta{
+  
+    width: 50%;
+    display: block;
+    color: black;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+    .mainboard{
+  color:#EB4320 ;
+
+}
+
 </style>
