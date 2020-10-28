@@ -16,12 +16,14 @@ export default new Router({
     {
       path: '/game-over',
       name: 'game-over',
-      component: GameOver
+      component: GameOver,
+      props: true
     },
     {
       path: '/game-won',
       name: 'game-won',
-      component: GameWon
+      component: GameWon,
+      props: true
     }
   ]
 })
