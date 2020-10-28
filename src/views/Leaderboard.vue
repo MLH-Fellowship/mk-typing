@@ -18,7 +18,6 @@
                    <th class="score">Score</th>
                 </tr>
             </thead>
-
             <tbody  v-bind:key="player.rank" v-for="player in players">           
                 <tr >
                     <td class="rank">{{player.rank}}</td>
@@ -97,7 +96,7 @@ export default {
 
 
 .mainboard{
-  color:#EB4320 ;
+  color:black ;
 
 }
 
@@ -108,7 +107,7 @@ export default {
         flex-direction: column;
         align-items: center;
         background: #20EB71;
-        height: 100%;
+        height: 100vw;
         border-radius: 5%;
         color: white;
         padding: 30px;
@@ -141,7 +140,7 @@ export default {
     background-color: #00cc80;
     width: calc(100% - 1em);
     display: block;
-    color: #20EB71;
+    color: black;
     border-radius: 20px;
     padding: .5em;
     text-decoration: none;

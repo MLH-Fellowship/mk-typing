@@ -1,7 +1,7 @@
 <template>
     <div class="gen">
 
-        <v-container class="mt-5">
+        <v-container class="gen">
             <div class="center">
                 <p class="font-weight-bold mt-2">Game Won</p>
                 <v-img
@@ -34,6 +34,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vw;
 }
 
 .input {
@@ -54,7 +55,7 @@ export default {
   
     width: 50%;
     display: block;
-    color: #EB4320;
+    color: black;
     border-radius: 20px;
     padding: .5em;
     text-decoration: none;

@@ -1,6 +1,6 @@
 <template >
     <div class="gen">
-        <v-container class="mt-5">
+        <v-container class="gen">
             <div class="center">
                 <p class="font-weight-bold mt-2">Game Over</p>
                 <v-img
@@ -33,6 +33,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vw;
 }
 
 .input {
@@ -40,8 +41,6 @@ export default {
 }
 
 .gen{
-      width: 100%;
-      height: 100%;
       color: white;
       background: #EB4320;
     }
@@ -52,7 +51,7 @@ export default {
   
     width: 50%;
     display: block;
-    color: #20EB71;
+    color: black;
     border-radius: 20px;
     padding: .5em;
     text-decoration: none;
